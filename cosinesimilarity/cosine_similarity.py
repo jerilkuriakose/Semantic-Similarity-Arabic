@@ -536,8 +536,8 @@ class CosineSimilarity(SemanticSimilarityArabic):
 1.0,
  0)"
         """ 
-    if not isinstance(sentences, list) or len(sentences) < 2:
-      raise ValueError("Input must be a list of at least two sentences")
+    # if not isinstance(sentences, list) or len(sentences) < 2:
+    #   raise ValueError("Input must be a list of at least two sentences")
 
         # Preprocess and encode all sentences
     sentences_embeddings = self.preprocess_for_faiss(self.embed_sentences(sentences))
